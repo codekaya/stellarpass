@@ -5,7 +5,7 @@ import { Fingerprint, Stars, Zap, Shield } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 
 const LoginPage = () => {
-  const { user, login, register, isLoading } = useAuth()
+  const { user, login, register, isLoading, isPasskeySupported } = useAuth()
   const [isRegisterMode, setIsRegisterMode] = useState(false)
   const [username, setUsername] = useState('')
 
@@ -61,6 +61,17 @@ const LoginPage = () => {
           >
             Your gateway to seamless micro-payments
           </motion.p>
+          
+          {isPasskeySupported && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.7 }}
+              className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-xs font-medium mt-2"
+            >
+              ✨ Real Passkey Support Enabled
+            </motion.div>
+          )}
         </div>
 
         {/* Features */}

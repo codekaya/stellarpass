@@ -25,6 +25,7 @@ import {
 } from 'lucide-react'
 import { useWallet } from '../contexts/WalletContext'
 import { useAuth } from '../contexts/AuthContext'
+import PasskeyStatus from '../components/PasskeyStatus'
 
 const Dashboard = () => {
   const { balance, transactions, isLoading } = useWallet()
@@ -166,6 +167,9 @@ const Dashboard = () => {
           </motion.button>
         </div>
       </motion.div>
+
+      {/* Passkey Status */}
+      <PasskeyStatus />
 
       {/* Balance Card */}
       <motion.div

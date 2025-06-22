@@ -6,4 +6,15 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  optimizeDeps: {
+    include: [
+      'passkey-kit',
+      '@stellar/stellar-sdk'
+    ]
+  },
+  build: {
+    commonjsOptions: {
+      include: [/passkey-kit/, /node_modules/]
+    }
+  }
 }) 
