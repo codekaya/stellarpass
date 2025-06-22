@@ -260,38 +260,38 @@ const Dashboard = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="grid grid-cols-2 lg:grid-cols-4 gap-4"
+        className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4"
       >
-        <div className="card text-center">
-          <div className="w-12 h-12 mx-auto mb-3 bg-green-100 rounded-xl flex items-center justify-center">
-            <ArrowDownLeft className="w-6 h-6 text-green-600" />
+        <div className="card text-center p-4 min-h-[120px] flex flex-col justify-center">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 bg-green-100 rounded-xl flex items-center justify-center">
+            <ArrowDownLeft className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
           </div>
-          <p className="text-2xl font-bold text-gray-900">${totalReceived.toFixed(2)}</p>
-          <p className="text-sm text-gray-600">Received Today</p>
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-tight">${totalReceived.toFixed(2)}</p>
+          <p className="text-xs sm:text-sm text-gray-600 mt-1">Received Today</p>
         </div>
 
-        <div className="card text-center">
-          <div className="w-12 h-12 mx-auto mb-3 bg-red-100 rounded-xl flex items-center justify-center">
-            <ArrowUpRight className="w-6 h-6 text-red-600" />
+        <div className="card text-center p-4 min-h-[120px] flex flex-col justify-center">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 bg-red-100 rounded-xl flex items-center justify-center">
+            <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 text-red-600" />
           </div>
-          <p className="text-2xl font-bold text-gray-900">${totalSent.toFixed(2)}</p>
-          <p className="text-sm text-gray-600">Sent Today</p>
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-tight">${totalSent.toFixed(2)}</p>
+          <p className="text-xs sm:text-sm text-gray-600 mt-1">Sent Today</p>
         </div>
 
-        <div className="card text-center">
-          <div className="w-12 h-12 mx-auto mb-3 bg-blue-100 rounded-xl flex items-center justify-center">
-            <Zap className="w-6 h-6 text-blue-600" />
+        <div className="card text-center p-4 min-h-[120px] flex flex-col justify-center">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 bg-blue-100 rounded-xl flex items-center justify-center">
+            <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
           </div>
-          <p className="text-2xl font-bold text-gray-900">{microPayments.length}</p>
-          <p className="text-sm text-gray-600">Micro Payments</p>
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-tight">{microPayments.length}</p>
+          <p className="text-xs sm:text-sm text-gray-600 mt-1">Micro Payments</p>
         </div>
 
-        <div className="card text-center">
-          <div className="w-12 h-12 mx-auto mb-3 bg-purple-100 rounded-xl flex items-center justify-center">
-            <Award className="w-6 h-6 text-purple-600" />
+        <div className="card text-center p-4 min-h-[120px] flex flex-col justify-center">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 bg-purple-100 rounded-xl flex items-center justify-center">
+            <Award className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
           </div>
-          <p className="text-2xl font-bold text-gray-900">Gold</p>
-          <p className="text-sm text-gray-600">Member Status</p>
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-tight">Gold</p>
+          <p className="text-xs sm:text-sm text-gray-600 mt-1">Member Status</p>
         </div>
       </motion.div>
 
