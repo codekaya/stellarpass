@@ -1,8 +1,10 @@
-# StellarPass - React Frontend
+# StellarPass
 
-A beautiful React frontend for StellarPass, your gateway to seamless micro-payments on the Stellar network. Experience Web2-level UX with Web3 infrastructure.
+tellarPass, your gateway to micro-payments on the Stellar network. Experience Web2-level UX with Web3 infrastructure.
 
-![StellarPass Banner](https://via.placeholder.com/800x200/4F46E5/FFFFFF?text=StellarPass+-+Seamless+Micro-Payments)
+![StellarPass App](./stellarpass.png)
+
+*StellarPass Dashboard - Your gateway to seamless micro-payments*
 
 ## 🌟 Features Overview
 
@@ -55,6 +57,13 @@ npm run dev
 
 4. Open your browser and navigate to `http://localhost:3000`
 
+## 📸 App Screenshots
+
+### Dashboard Overview
+![StellarPass Wallet Interface](./stellarwallet.png)
+
+*Complete wallet interface showing balance, transactions, and quick actions*
+
 ## 📱 Application Pages & Features
 
 ### 🔐 Authentication Page (`/login`)
@@ -100,6 +109,10 @@ npm run dev
 - Content creator support ($0.75)
 - Birthday gifts ($5.00)
 - News article micro-payments ($0.25)
+
+![StellarPass Dashboard](./stellarpass.png)
+
+*Rich dashboard with categorized micro-payments and beautiful UI*
 
 ### 💸 Send Page (`/send`)
 
