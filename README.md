@@ -41,7 +41,7 @@ tellarPass, your gateway to micro-payments on the Stellar network. Experience We
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/codekaya/stellarpass
 cd stellarpass-react
 ```
 
